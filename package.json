@@ -2,9 +2,10 @@
   "name": "hapi-dtrace",
   "version": "0.0.0",
   "description": "hapi plugin with dtrace probes!",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "belly-button",
+    "test": "lab"
   },
   "repository": {
     "type": "git",

@@ -31,9 +31,13 @@ ID   PROVIDER            MODULE                          FUNCTION NAME
 ## Available Probes
 
 | Probe Name | Request Event | Arguments |
---------------------------------------------
+|------------|---------------|-----------|
 | request | onRequest | (request.id, method, path, headers) |
 | pre-auth | onPreAuth | (request.id, method, path, headers) |
+| post-auth | onPostAuth | (request.id, method, path, headers) |
+| pre-handler | onPreHandler | (request.id, method, path, headers) |
+| post-handler | onPostHandler | (request.id, method, path, headers) |
+| pre-response | onPreResponse | (request.id, method, path, headers) |
 
 
 ## Example

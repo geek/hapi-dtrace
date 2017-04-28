@@ -31,9 +31,13 @@ describe('dtrace-probes', () => {
     server.register(Plugin, (err) => {
       expect(err).to.not.exist();
 
-      server.route({ method: 'get', path: '/', handler: (request, reply) => {
-        reply('ok');
-      }});
+      server.route({
+        method: 'get',
+        path: '/',
+        handler: (request, reply) => {
+          reply('ok');
+        }
+      });
 
       server.inject('/', (res) => {
         expect(res.statusCode).to.equal(200);

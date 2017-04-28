@@ -8,9 +8,13 @@ const server = new Hapi.Server();
 server.connection({ port: 3000 });
 server.register(DtracePlugin);
 
-server.route({ method: 'get', path: '/', handler: (request, reply) => {
-  reply('ok');
-}});
+server.route({
+  method: 'get',
+  path: '/',
+  handler: (request, reply) => {
+    reply('ok');
+  }
+});
 
 server.start((err) => {
   if (err) {

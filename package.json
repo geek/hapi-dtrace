@@ -1,6 +1,6 @@
 {
   "name": "hapi-dtrace",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "hapi plugin with dtrace probes!",
   "main": "lib/index.js",
   "scripts": {
@@ -11,7 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/geek/hapi-dtrace.git"
   },
-  "keywords": ["hapi", "dtrace", "plugin"],
+  "keywords": [
+    "hapi",
+    "dtrace",
+    "plugin"
+  ],
   "author": "wyatt",
   "license": "MPL-2.0",
   "bugs": {
